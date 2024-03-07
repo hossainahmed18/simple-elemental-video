@@ -13,7 +13,7 @@ resource "aws_s3_bucket_cors_configuration" "s3_playground_cors_configuration" {
     allowed_headers = ["*"]
     allowed_methods = ["PUT", "POST"]
     allowed_origins = [
-        "http://localhost:${var.uploader_ui_port}"
+      "http://localhost:${var.uploader_ui_port}"
     ]
     expose_headers  = ["ETag"]
     max_age_seconds = var.s3_cors_max_age_seconds
