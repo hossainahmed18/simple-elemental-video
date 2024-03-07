@@ -31,3 +31,11 @@ variable "uploader_ui_port" {}
 #   })
 #   description = "AWS Elemental mediaconnect settings"
 # }
+
+variable "s3_cors_max_age_seconds" {
+  type        = number
+  default = 3600
+}
+variable "uploader_ui_port" {
+  type        = number
+}
